@@ -1,318 +1,80 @@
-html{
-    scroll-behavior: smooth;
-}
 body{
-    font-family: sans-serif;
-    overflow-x: hidden;
-}
-
-/* ==== SCROLL BAR ==*/
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: white;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: royalblue;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: purple;
-  }
-
-
-
-
-
-
-.main_header{
-    margin-top: -10px;
-    height: 800px;
-    width: 100%;
-    background-image: linear-gradient(20deg, white, white,  #D1DBFF);
-}
-.main_navigation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.navigation{
-    padding-left: 100px;
-}
-.navigation ul{
-    display: flex;
-    justify-content: center;
-}
-.navigation li{
-    list-style: none;
-    padding: 20px;
-}
-.navigation ul a{
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: center;
-}
-.fa-chevron-down{
-    font-size: 10px;
-    margin-left: 5px;
-}
-.support{
-    margin-left: 30px;
-}
-.support_div{
-    display: flex;
-    flex-wrap: wrap;
-    width: 200px;
-    /* background-color: beige; */
-    align-items: center;
-}
-.support_div_text{
-    margin-left: 10px;
-}
-.support_div p{
+    background-color: #212121;
     margin: 0px;
-    font-size: 13px;
+    padding: 0px;
+    font-family: system-ui;
 }
-.fa-phone{
-    font-size: 15px;
-    padding: 15px;
-    color: royalblue;
-    background-color: white;
-    border-radius: 50%;
+.main-div{
+    max-width: 1920px;
+}
+.top-navigation{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.starting_button{
-    padding: 12px 25px;
-    background-color: royalblue;
-    border-radius: 50px;
-    cursor: pointer;
-}
-.starting_button a{
+.top-navigation a{
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    padding: 10px 30px;
 }
 
-
-
-
-
-
-
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    padding: 120px;
-    align-items: center;
-    z-index: 2;
-}
-
-.header h1{
-    font-size: 60px;
-}
-
-.animated-radius{
-    width: 500px;
-    height: 500px;
-    background-color: transparent;
-    z-index: 1;
-}
-/*img{
-    z-index: 2;
-}
-.radius-1{
-    z-index: 1;
-    position: absolute;
-    top: 200px;
-    right: 80px;
-    border: 5px solid royalblue;
-    border-radius: 40% 60% 44% 56% / 56% 42% 58% 44%;
-}
-.radius-2{
-    z-index: 1;
-    position: absolute;
-    top: 200px;
-    right: 80px;
-    border: 5px solid white;
-    border-radius: 53% 47% 58% 42% / 48% 53% 47% 52% ;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-.quick-steps-div-cards{
-    display: flex;
-    justify-content: center;
-}
-
-.quick-steps-div-cards-card{
-    width: 300px;
-    margin: 40px;
-    padding: 20px;
-    border-left: 2px solid royalblue;
-    position: relative;
-
-}
-.quick-steps-div-cards-card-part-1{
-    position: absolute;
-    top: -10px;
-    left: -70px;
-    font-size: 30px;
-    color: royalblue;
-    opacity: 0.2;
-}
-.quick-steps-div-heading{
+.main-header{
+    margin-top:150px;
     width: 100%;
+    height: 300px;
 }
-.quick-steps-div-heading p{
-    text-align: center;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-
-.work-with-section{
-    color: black;
-    width: 95vw;
-    height: 500px;
-    background-image: linear-gradient(to right,royalblue , white);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 00px;
-    padding-left: 40px;
-    padding-right: 20px;
-}
-.work-width-section-left img{
-    border-radius: 20px;
-}
-.work-width-section-right{
-    width: 35%;
-    margin: 20px;
-    padding: 20px;
-}
-.work-width-section-right-icons{
-    width: 100%;
-    height: 100px;
-    margin-top: 30px;
-    /* background-color: #D1DBFF; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-
-
-/* ==== OUR SERVICES ====*/
-.our-services{
-    width: 100%;
-    height: auto;
-    margin-top: 100px;
-}
-.our-services-service-cards{
-    display: flex;
-    justify-content: space-evenly;
-}
-.our-services-service-cards-card{
-    width: 320px;
-    height: 420px;
-    background-color: white;
-    box-shadow: 0px 0px 10px #D1DBFF;
-    border-radius: 20px;
-}
-.our-services-service-cards-card-icon{
-    display: flex;
-    justify-content: left;
-    margin-left: 40px;
-    margin-top: 40px;
-}
-.our-services-service-cards-card-heading h1{
+.main-header .h1{
+    padding-left: 100px;
+    margin-bottom: -30px;
+    line-height: 1;
+    /* width: 100%; */
+    font-size: 50px;
+    color: rgb(19, 165, 223);
     text-align: left;
-    padding-left: 40px;
 }
-.our-services-service-cards-card-paragraph p{
+.main-header .p{
+    padding-left: 100px;
+    line-height: 0.1;
+    color: white;
+}
+
+
+.about-us{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.about-us-card{
+    width: 350px;
+    height: 450px;
+    background-color: #212121;
+    box-shadow: 0px 0px 50px -20px black;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 30px;
+}
+
+.about-us-card h1{
+    color: skyblue;
+    font-size: 30px;
+}
+.about-us-card p{
+    color: white;
     text-align: justify;
-    padding: 40px;
-    padding-bottom: 10px;
-}
-.our-services-service-cards-card-arrow i{
-    color: royalblue;
-    margin-left: 40px;
+    margin-bottom: 40px;
 }
 
-
-.why-us{
-    width: 96vw;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-    margin-top: 100px;
-}
-.why-us-image-area{
-    width: 700px;
-    height: 500px;
-    /* background-color: black; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.why-us-text-area{
-    width: 700px;
-    height: 500px;
-    /* background-color: black; */
-}
-
-
-
-
-
-
-
-
-/* === OUR WORKING CYCLE ==*/
-.our-working-cycle{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-.our-working-cycle-card{
-    width: 300px;
-    height: 400px;
-    border-radius: 20px;
-    margin: 20px;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.our-working-cycle-card-image, .our-working-cycle-card p, .our-working-cycle-card h1{
-    width: 100%;
-    justify-content: center;
-    text-align: center;
+.about-us-card a{
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: skyblue;
+    color: #212121;
 }
